@@ -9,7 +9,7 @@
             <label for="member">주문회원</label>
             <select class="form-control" id="member" name="memberId">
                 <option value="">회원선택</option>
-                <option th:each="member : ${testMembers}"
+                <option th:each="member : ${members}"
                         th:text="${member.name}"
                         th:value="${member.id}"/>
             </select>
